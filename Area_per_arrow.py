@@ -15,29 +15,39 @@ def main():
     print(">>>>>>>_____________________\`-._")
     print(">>>>>>>                     /.-'")
     print("Area and Perimeter of an Arrow")
+
     # arrow base image
     print(" _________")
     print("|         |")
     print("|_________|\n")
+
     # arrow base user input
-    length = int(input("Enter the length (cm): "))
-    width = int(input("Enter the width (cm): "))
+    length = int(input("Enter the length: "))
+    width = int(input("Enter the width: "))
     print("\n")
+
     # arrow tip image
     print("    _")
     print(".-'` |")
     print("`'-._|")
+
     # arrow tip user input
-    base = int(input("Enter the base (cm): "))
-    height = int(input("Enter the height (cm): "))
-    side = int(input("Enter the sides (cm): "))
+    base = int(input("Enter the base: "))
+    height = int(input("Enter the height: "))
+    side = int(input("Enter the sides: "))
     print("\n")
+
+    # units user input
+    units = input("What are the units for your arrow? :")
+    print("\n")
+
     # calculations
     area = (length * width) + (base * height / 2)
     perimeter = (2 * (length + width)) + (2 * side + base)
+
     # output
-    print("The area of your arrow is : {:,.2f}cm^2".format(area))
-    print("The perimeter of your arrow : {:,.2f}cm".format(perimeter))
+    print("The area of your arrow is {:,.2f}".format(area), units, "^2")
+    print("The perimeter of your arrow {:,.2f}".format(perimeter), units)
     print("    _ ")
     print(".-'` |------.")
     print("`'-._|------'")
